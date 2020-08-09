@@ -34,12 +34,6 @@
 <br />
 <br />
 
-<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rvsoftlab&theme=radical&hide_langs_below=1&layout=compact" />
-<img align="center" src="https://github-readme-stats.vercel.app/api?username=rvsoftlab&show_icons=true&theme=radical&line_height=21" alt="Ravi's github stats"/>
-
-*PS: Top languages does not indicate my skill level or something like that, it's a github metric of which languages i have the most code on github*
-
-<br />
 
 <!-- <img align="left" alt="codeSTACKr's Github Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=rvsoftlab&show_icons=true&hide_border=true" /> -->
 
