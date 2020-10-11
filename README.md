@@ -43,6 +43,6 @@ No Activity tracked this Week
 <!-- <img align="left" alt="codeSTACKr's Github Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=rvsoftlab&show_icons=true&hide_border=true" /> -->
 
 [website]: https://rv-portfolio.web.app/
-[twitter]: https://twitter.com/rv2810
-[instagram]: https://instagram.com/r_vorine
+[twitter]: https://twitter.com/rvorine
+[instagram]: https://instagram.com/rvorine
 [linkedin]: https://www.linkedin.com/in/rvorine/
