@@ -1,10 +1,10 @@
-### Hi there, Ravikant Vishwakarma - aka [Ravi][website] 👋
+ 
 
-## I'm a Son, Brother, Developer, and Teacher!
+## Hi there, Ravikant Vishwakarma - aka [Ravi][website] 👋
 - 🔭 I’m currently working on an Android App!
 - 🌱 I’m currently learning everything 🤣
 - 👯 I’m looking to collaborate with other content creators
-- 🥅 2020 Goals: Learn more about hybrid app development
+- 🥅 2021 Goals: Learn more about hybrid app development
 - ⚡ Fun fact: I love to play guitar
 
 ### Connect with me:
