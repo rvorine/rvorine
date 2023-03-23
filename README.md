@@ -4,7 +4,7 @@
 - 🔭 I’m currently working on an Android App!
 - 🌱 I’m currently learning everything 🤣
 - 👯 I’m looking to collaborate with other content creators
-- 🥅 2022 Goals: Learn more about hybrid app development
+- 🥅 2023 Goals: Learn more about hybrid app development and play with ChatGPT
 - ⚡ Fun fact: I love to play guitar
 
 ### Connect with me:
