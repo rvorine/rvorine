@@ -27,7 +27,7 @@ jobs:
           )
 
           # Start date for the commits
-          START_DATE="2025-01-15"
+          START_DATE="2025-01-14"
 
           # Current date offset for each cell
           DATE_OFFSET=0
