@@ -12,7 +12,7 @@ art = [
 ]
 
 # Start date for commits
-start_date = datetime(2025, 1, 1)
+start_date = datetime(2025, 1, 15)
 
 # Repository directory
 repo_dir = os.getcwd()
