@@ -21,6 +21,8 @@ jobs:
 
       - name: Generate Art
         run: |
+          git config user.name "rvorine"
+          git config user.email "ravikant.vishwakarma0@gmail.com"
           python generate_art.py
 
       - name: Push Changes
