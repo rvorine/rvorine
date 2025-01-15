@@ -1,54 +1,43 @@
-name: Generate GitHub Art
+name: Generate Contribution Art
 
 on:
+  workflow_dispatch:
   schedule:
-    # Run daily at 00:01 UTC
-    - cron: '1 0 * * *'
+    # Runs every Sunday at midnight UTC
+    - cron: "1 0 * * 0"
 
 jobs:
-  commit-art:
+  generate-art:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Generate commit for contribution graph
-        run: |
-          # Define the grid for "RVORINE" (7 rows x N columns)
-          # Each '1' means a commit, '0' means no commit
-          declare -a GRID=(
-            "11100 00000 01110 11100 00000 00100 11111"
-            "10010 00000 10001 10010 00000 00100 10000"
-            "10010 00000 10001 11100 00000 00100 11110"
-            "11100 00000 10001 10100 00000 00100 10000"
-            "10100 00000 10001 10100 00000 00100 10000"
-            "10010 00000 10001 10010 00000 00100 10000"
-            "10001 00000 01110 10001 00000 00100 11111"
-          )
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
 
-          # Start date for the commits
-          START_DATE="2025-01-14"
+    - name: Install Contribution Art Generator
+      run: |
+        python -m pip install --upgrade pip
+        pip install github-contributions
 
-          # Current date offset for each cell
-          DATE_OFFSET=0
+    - name: Generate Contribution Art
+      env:
+        REPO: ${{ github.repository }}
+        USERNAME: ${{ github.repository_owner }}
+      run: |
+        github_contributions --username "${USERNAME}" \
+          --message "Generating art for RVORINE" \
+          --art "RVORINE" \
+          --repo "${REPO}" \
+          --commit-date-start "2025-01-01" \
+          --commit-date-end "2025-12-31"
 
-          # Iterate through each row and column in the grid
-          for ROW in "${GRID[@]}"; do
-            for CELL in $ROW; do
-              if [ "$CELL" -eq 1 ]; then
-                # Calculate the commit date
-                COMMIT_DATE=$(date -d "$START_DATE + $DATE_OFFSET days" '+%Y-%m-%dT12:00:00')
-
-                # Create a dummy commit
-                echo "$COMMIT_DATE" > dummy.txt
-                git add dummy.txt
-                GIT_AUTHOR_DATE="$COMMIT_DATE" GIT_COMMITTER_DATE="$COMMIT_DATE" \
-                  git commit -m "Contribution for $COMMIT_DATE"
-              fi
-              ((DATE_OFFSET++))
-            done
-          done
-
-      - name: Push changes
-        run: |
-          git push origin main
+    - name: Push changes
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git push origin main
