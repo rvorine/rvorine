@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Runs every Sunday at midnight UTC
-    - cron: "1 0 * * 0"
+    - cron: "1 0 * * *"
 
 jobs:
   generate-art:
@@ -25,10 +25,15 @@ jobs:
           git config user.email "ravikant.vishwakarma0@gmail.com"
           python generate_art.py
 
+      - name: Determine Default Branch
+        id: default_branch
+        run: echo "branch=$(git rev-parse --abbrev-ref HEAD)" >> $GITHUB_ENV
+
       - name: Push Changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ env.branch }}
         run: |
           git config user.name "rvorine"
           git config user.email "ravikant.vishwakarma0@gmail.com"
-          git push origin main
+          git push origin $BRANCH
