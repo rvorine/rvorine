@@ -4,8 +4,8 @@
 - 🔭 I’m currently working on an Android App!
 - 🌱 I’m currently learning everything 🤣
 - 👯 I’m looking to collaborate with other content creators
-- 🥅 2025 Goals: Learn more about hybrid app development and play with ChatGPT
-- ⚡ Fun fact: I love to play guitar
+- 🥅 2026 Goals: Learn more about hybrid app development and play with LLMs
+- ⚡ Fun fact: I love to play guitar, and flute
 
 
 
@@ -15,6 +15,7 @@
 <a href="https://twitter.com/rvorine" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="rvorine" height="30" width="40" /></a>
 <a href="https://www.linkedin.com/in/rvorine/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rvorine" height="30" width="40" /></a>
 <a href="https://www.youtube.com/@rvorine" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="@rvorine" height="30" width="40" /></a>
+<a href="https://www.instagram.com/lacopydepastel" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="@lacopydepastel" height="30" width="40" /></a>
 </p>
 
 ### Languages and Tools:
